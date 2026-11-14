@@ -25,11 +25,11 @@ The recommendations help spread out a large job so the computer is less likely t
 
 The recommendations are starting points, not a guarantee that every computer can safely run a job at those settings. Never use a setting higher than the limit already provided by your app or hardware. Save important work before testing, and stop the job immediately if the computer becomes hot, unstable, or unresponsive.
 
-## Important limitation
+## Known limitations
 
-This tool does **not** directly repair a computer that is crashing. It only helps reduce crashes caused by an app or job doing too much work at once.
+This tool only calculates workload limits; it does not monitor the computer, change another app's settings, or directly repair crashes. Its recommendations are estimates, not guarantees, and only help when an app or job supports the suggested limits.
 
-It cannot fix overheating, damaged hardware, a failing power supply, malware, or a damaged operating system. If the computer crashes when no large job is running, stop using it and have it checked by a qualified technician.
+It cannot fix overheating, damaged hardware, a failing power supply, malware, or a damaged operating system. If the computer crashes when no large job is running, have it checked by a qualified technician.
 
 ## How to apply it
 
