@@ -1,4 +1,4 @@
-# Computer Crash Fix
+# Workload Throttling Advisor (Computer Crash Fix)
 
 ## What it is
 
@@ -20,6 +20,8 @@ You enter an estimate of the job size. The helper recommends:
 - how much work to keep waiting;
 - how many tasks to run at once; and
 - how large each group of work should be.
+
+Limits never exceed the workload size, and parallel tasks are also capped by CPU cores and available memory. Use `--cpu-cores`, `--memory-mb` and `--memory-per-task-mb` (default 256) to override the detected values.
 
 The recommendations help spread out a large job so the computer is less likely to be overloaded.
 
@@ -70,7 +72,7 @@ python3 crash_fix.py 2048
 You should see three recommendations similar to:
 
 ```text
-Keep at most 4096 items waiting
+Keep at most 2048 items waiting
 Run at most 5 tasks at once
 Process work in groups of 287
 ```
@@ -85,7 +87,7 @@ Run:
 python3 -m unittest -v
 ```
 
-A successful test shows `OK` and reports that 4 tests ran.
+A successful test shows `OK` and reports that 8 tests ran.
 
 ### Test invalid input
 
